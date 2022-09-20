@@ -27,6 +27,7 @@ body {
 
 header {
     /* margin: 0.5em; */
+    top: 0;
     margin: 0 auto;
     width: 75%;
     z-index: 9;
@@ -50,8 +51,7 @@ header {
     display: none;
 }
 
-nav li,
-a {
+nav li,a {
     color: white;
     text-decoration: none;
     list-style: none;
@@ -304,7 +304,7 @@ a {
 .card .details p {
     color: white;
     /* font-size: 0.6rem; */
-    font-size: clamp(0.6rem, 1vw, 1rem);
+    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
     margin-top: 0.8em;
 }
 
@@ -422,7 +422,7 @@ footer {
     gap: 1em;
     margin: 4em 0;
     padding: 1em 0;
-    font-size: clamp(0.6rem, 1vw, 1rem);
+    font-size: clamp(0.6rem, 1.2vw, 1.2rem);
 }
 
 
