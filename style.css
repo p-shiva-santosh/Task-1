@@ -11,8 +11,8 @@ img {
 }
 
 body {
-    /* background-color: rgba(10,27,47,255); */
-    background-color: rgb(5, 22, 45);
+    background-color: rgb(8,20,44);
+    /* background-color: rgb(5, 22, 45); */
     font-family: 'Exo', sans-serif;
     padding: 0%;
 }
@@ -21,13 +21,18 @@ body {
     margin: 0 auto;
     width: 75%;
     padding: 0%;
-    border: 1px solid rgb(5, 22, 45);
+    /* border: 1px solid rgb(5, 22, 45); */
     /* font-size: 1.2rem; */
 }
 
+
+
 header {
     /* margin: 0.5em; */
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     margin: 0 auto;
     width: 75%;
     z-index: 9;
@@ -36,7 +41,6 @@ header {
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
-    position: fixed;
     /* background-color: rgb(5, 22, 45); */
     background: rgb(6, 22, 45);
     background: linear-gradient(156deg, rgba(6, 22, 45, 1) 24%, rgba(2, 34, 80, 1) 26%, rgba(2, 86, 43, 1) 28%, rgba(2, 32, 74, 1) 29%, rgba(6, 22, 45, 1) 31%, rgba(6, 22, 45, 1) 75%, rgba(5, 35, 77, 1) 77%, rgba(1, 107, 54, 1) 79%, rgba(5, 35, 77, 1) 81%, rgba(6, 22, 45, 1) 84%);
@@ -62,9 +66,27 @@ nav li,a {
     margin: 0.3em;
 }
 
-.right div {
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
     display: inline-block;
+    padding: 3px;
+    margin: 4px;
+  }
+  .down {
+    transform: rotate(45deg);
+    /* -webkit-transform: rotate(135deg); */
+  }
+
+.right{
+    display: flex;
+    align-items: center;
 }
+
+/* .right div {
+    display: inline-block;
+} */
 
 #logo {
     /* background-color: rgba(123,164,53,255); */
@@ -78,6 +100,25 @@ nav li,a {
     background-color: rgb(123, 164, 53);
     border-radius: 0.3em;
 }
+
+.cart{
+    position: relative;
+    padding: 0.4em;
+}
+
+.cart img{
+    width: 3em;
+}
+.cart span{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    background-color: rgb(123, 164, 53);
+    padding: 0.2em 0.4em;
+    border-radius: 50% ;
+
+}
+
 
 .welcome-block {
     color: white;
@@ -140,6 +181,12 @@ nav li,a {
     border-radius: 50%;
     color: rgb(123, 164, 53);
     border: none;
+}
+
+
+.welcome-block-2-outer{
+    background-color:  rgb(8,12,45);
+    padding: 5% 0;
 }
 
 .welcome-block-2 {
@@ -322,9 +369,7 @@ nav li,a {
     font-size: clamp(0.6rem, 1vw, 1rem);
 }
 
-.others-match {
-    /* margin: 0 40%; */
-    /* border: 1px solid wheat; */
+.others-match{
     text-align: center;
 }
 
@@ -332,14 +377,26 @@ nav li,a {
     /* font-size: 0.6rem; */
     /* font-size: 1.5rem; */
     font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+    
+}
+
+.statistics-outer{
+    background-color: rgb(8,12,45);
+    padding: 5% 0;
 }
 
 .statistics {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 90%;
-    margin: 10% auto;
+    margin: auto;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1em;
+}
+
+.statistics div{
+    margin: 1em 0;
 }
 
 .statistics h1 {
@@ -366,7 +423,7 @@ nav li,a {
     flex-flow: wrap;
     align-items: center;
     padding: 1em;
-    margin-bottom: 3em;
+    margin: 5% 0;
 }
 
 .newsletter-text {
@@ -419,7 +476,7 @@ footer {
     color: white;
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1fr 2fr;
-    gap: 1em;
+    gap: 6em;
     margin: 4em 0;
     padding: 1em 0;
     font-size: clamp(0.6rem, 1.2vw, 1.2rem);
@@ -460,6 +517,22 @@ footer .todays-winners div {
     padding-top: 1em;
 }
 
+.container {
+    margin: 0 auto;
+    width: 75%;
+    padding: 0%;
+    /* border: 1px solid rgb(5, 22, 45); */
+    /* font-size: 1.2rem; */
+}
+
+.arrowIcon img{
+    width: 1em;
+    
+}
+.arrowIcon{
+    display: flex;
+    align-items: center;
+}
 
 
 @media (max-width: 1024px) {

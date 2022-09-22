@@ -10,12 +10,14 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Game with Live Streaming-Game8</title>
-    <meta name="description" content="Game8 is the best way to explore the world of gaming. With a new, fully interactive website. Live stream your Gaming skills or watch awesome gamplays of trending games by pro players.">
-    <meta name="keywords" content="Game8, esports, Live streaming, Gaming, Game with live Streaming, trending games, pro players,watch, Live now, trending now, stremers">
+    <meta name="description"
+        content="Game8 is the best way to explore the world of gaming. With a new, fully interactive website. Live stream your Gaming skills or watch awesome gamplays of trending games by pro players.">
+    <meta name="keywords"
+        content="Game8, esports, Live streaming, Gaming, Game with live Streaming, trending games, pro players,watch, Live now, trending now, stremers">
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
         <header>
             <div id="logo">Game8</div>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -24,31 +26,39 @@
                 <ul>
                     <li class="nav-green-tabs"><a href="#">HOME</a></li>
                     <li><a href="#">SHOP</a></li>
-                    <li><a href="#">PAGES</a></li>
+                    <!-- <li><a href="#">PAGES &#65088</a>
+                    </li> -->
+                    <li><a href="#">PAGES <i class="arrow down"></i></a></li>
                     <li><a href="#">BLOG</a></li>
                     <li class="nav-green-tabs"><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="right">
-                <div><a href="#">cart</a></div>
-                <div class="nav-green-tabs" id="join"><a href="#">JOIN NOW</a></div>
+                <div class="cart"><a href="#"><img src="images/cartIcon.png" alt=""></a>
+                <span>0</span></div>
+                <div class="nav-green-tabs " id="join"><a href="#" class="arrowIcon">JOIN NOW<img src="images/doubleArrowHeadRight.png" alt=""></a></div>
             </div>
 
         </header>
 
+        <div class="container">
         <div class="welcome-block">
             <div class="welcome-block-content">
-                <h6>ANY WHERE &#9733 ANY TIME</h6>
+                <h6>ANY WHERE <img src="images/starIcon.png" alt="" style="width: 1em;">ANY TIME</h6>
+                    
                 <h1>GAME WITH <br> LIVESTREAMING</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, quae? Magni ab, qui harum labore,
                     eveniet architecto ea nam minima porro dolor.</p>
-                <button class="play-now">Play Now </button>
+                <button class="play-now "><a href="#" class="arrowIcon">Play Now<img src="images/doubleArrowHeadRight.png"></a> </button>
                 <button class="live">&#9654</button>
             </div>
             <div class="welcome-block-img"><img src="images/warzone.jpg" alt="">
             </div>
         </div>
-        <div class="welcome-block-2">
+        </div>
+
+        <div class="welcome-block-2-outer">
+        <div class="welcome-block-2 container">
             <div class="welcome-block-2-img">
                 <img src="images/gamingKid.png" alt="">
                 <button class="live">&#9654</button>
@@ -58,10 +68,12 @@
                 <h6>----- LIVE STREAMING</h6>
                 <h1>WATCH UNLIMITED<br> LIVE STREAMING</h1>
                 <p>Gamic is the best way to explore the world of gaming. With a new, fully interactive website</p>
-                <button class="play-now">Play Now </button>
+                <button class="play-now"><a href="#" class="arrowIcon">Play Now<img src="images/doubleArrowHeadRight.png"></a></button>
             </div>
         </div>
+        </div>
 
+        <div class="container">
         <div class="upcoming-matches">
             <h1>UPCOMING MATCHES</h1>
             <h3>The teams soccer in the next hour. You've been waiting for the best. You've got the match of your life.
@@ -154,12 +166,14 @@
                 </div>
             </div>
             <div class="others-match">
-                <button class="play-now">Other's Match</button>
+                <button class="play-now "><a href="#" class="arrowIcon">Other's Match <img src="images/doubleArrowHeadRight.png" alt=""></a></button>
             </div>
 
         </div>
+        </div>
 
-        <div class="statistics">
+        <div class="statistics-outer">
+        <div class="statistics container">
             <div>
                 <h1>8697</h1>
                 <h6>TWICHT STREAMS</h6>
@@ -177,7 +191,9 @@
                 <h6>PRO TEAM</h6>
             </div>
         </div>
+    </div>
 
+        <div class="container">
         <div class="newsletter">
             <div class="newsletter-text">
                 <h1>SUBSCRIBE NEWSLETTER</h1>
@@ -185,10 +201,12 @@
             </div>
             <div class="newsletter-input">
                 <input type="email" placeholder="Enter your Email">
-                <button type="submit">SUBSCRIBE</button>
+                <button type="submit" class="arrowIcon">SUBSCRIBE <img src="images/doubleArrowHeadRight.png" alt=""></button>
             </div>
         </div>
+    </div>
 
+        <div class="container">
         <footer>
             <div class="about">
                 <h2>Game8</h2>
@@ -229,8 +247,9 @@
                 </div>
             </div>
         </footer>
-
     </div>
+
+    <!-- </div> -->
     <!--container-->
 
 
